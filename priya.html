@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>priya Tharshini - portfolio</title>
+        <style>
+           body {
+               font-family: Arial,sans-serif;
+               margin: 0;
+               padding: 0;
+               background-color: #f0f0f0;
+           }
+           
+           header {
+               background-color: #333;
+               color: #fff;
+               text-align: center;
+               padding: 2rem 0;
+               position: relative;
+           }
+           
+           .header-content h1 {
+               font-size: 2.5rem;
+           }
+           
+           .profile-picture {
+               width: 100px;
+               height: 100px;
+               border-radius: 75%;
+               object-fit: cover;
+               position: absolute;
+               top: 75px;
+               left: 75px;
+           }
+           
+           nav {
+               background-color: #333;
+               color: #fff;
+               text-align: center;
+           }
+           
+           nav u1 {
+               list-style-type: none;
+               padding: 0;
+           }
+           
+           nav u1 li {
+               display:inline;
+               margin: 0 20px;
+           }
+           
+           nav u1 li a {
+               text-decoration: none;
+               color: #fff;
+           }
+           
+           .section-content {
+               background-color: #fff;
+               padding: 2rem;
+               margin: 1rem;
+               border-radius: 20px;
+               box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+           }
+           
+           .download-button {
+               background-color: #333;
+               color: #fff;
+               padding: 0.5rem 1rem;
+               text-decoration: none;
+               border-radius: 20px;
+               display: inline-block;
+               margin-top: 10px;
+           }
+           
+           .download-button:hover {
+               background-color: #555;
+           }
+           
+           footer {
+               text-align: center;
+               padding: 1rem 0;
+               background-color: #333;
+               color: #fff;
+           }
+           
+           u1 {
+               list-style-type: disc;
+               padding-left: 20px;
+           }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="header-content">
+             <h1>K PRIYA THARSHINI</h1>
+            </div>
+        </header>
+        
+        <nav>
+            <u1>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Soft Skills<a></li>
+                <li><a href="#projects">Achievement</a></li>
+                <li><a href="#technical">Technical Proficiency</a></li>
+                <li><a href="#contact">Contact<a></li>
+            </u1>
+        </nav>
+        
+        <section id="about">
+          <div class="section-content">
+		  <img src="Priyatharshini.jpeg" style="align:left" height="150">
+          <h2>About me</h2>
+           		  
+          <h4>Hai Everyone! 
+              I am PRIYA THARSHINI K</h4> 
+          <p>I am a final year student and i am currently pursuing B.sc Computer Science in Dr.URCW.</p>
+           </div> 
+        </section>
+        
+        <section id="education">
+           <div class="section-content">
+           <h2>My Education</h2>
+           <h4>B.sc Computer Science</h4>
+           <p>2021-2024<br>Dr.Umayal Ramanathan college for women, karikudi.<br>75.9%(Up to IV sem)</p>
+		   
+		    <h4>HSC</h4>
+		   <p>2021-2021<br>St.Mary's Girl's Higher secondary school,Devakottai.<br>80%</p>
+		   
+		    <h4>SSLC</h4>
+		   <p>2018-2019<br>St.Mary's Girl's Higher secondary school,Devakottai.<br>77%</p>
+		   
+		   
+        </div>
+        </section>
+        
+        <section id="skills">
+           <div class="section-content">
+           <h2>Soft Skills</h2>
+          
+               <li>Team working</li>
+               <li>Time Management</li>
+               <li>good listener</li>
+               <li>Self confidence</li>
+               <li>Motivation</li>
+			   <li>Problem solving</li>
+           </div>
+           </section>
+           
+           <section id="projects">
+           <div class="section-content">
+           <h2>Achievement</h2>
+           <u1>
+               <li>Certificate in the course for Python with "DATA SCIENCE" conducted by NISC.</li>
+               <li>Certificate in the course for "WEB DESIGNING" conducted by NISC.</li>
+			   <li>Attended the training programme in "DOT NET" framework in visual studio.</li>
+			   <li>Certificate in the "OFFICE AUTOMATION" course conducted the period of 30hr.</li>
+           </u1>
+           </div>
+           </section>
+		     <section id="technical">
+           <div class="section-content">
+           <h2>Technical Proficiency</h2>
+           <u1>
+               <li>Operating system: Microsoft office os</li>
+               <li>Programming language:C,C++,JAVA</li>
+			   <li>Web Technology:HTML,CSS</li>
+			   <li>IDE:NetBeans,visual studio</li>
+			   
+			   <li>Designing tool:Canva</li>
+			   <li>Microsoft Office</li>
+			  
+           </u1>
+           </div>
+           </section>
+           
+           <section id="contact">
+           <div class="section-content">
+           <h2>My Contact Details</h2>
+           <p>Name     : K PRIYA THARSHINI </p> 
+           <p>Phone no : 7339267844</p>
+           <p>Email id : sundari1021981@gmail.com</p>  
+           </div>   
+           </section>
+           
+           <footer>
+               <p>&copy; 2023 Priya Tharshini</p>
+           </footer>
+           
+           <script>
+               document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                   anchor.addEventListener('click',function(e) {
+                       e.preventDefault();
+const targetId = this.getAttribute('href').substring(1);
+const targetElement = document.getElementById(targetId);
+if(targetElement){
+    window.scrollTo({
+      top:targetElement.offsetTop, 
+      behavior:'smooth'
+      });
+    }
+ });
+});
+          </script>
+    </body>
+    </html>
